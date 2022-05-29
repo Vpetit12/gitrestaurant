@@ -10,13 +10,13 @@
 </head>
 <body>
 <div class="container">
-    <div class="pre-nav">
+    <nav class="pre-nav">
         <a href="#" class="logo">
             <i class="fa-solid fa-pizza-slice">Luigi Bros. Pizza</i>
         </a>
 
         <a href="#">Call us at 000-000-0000</a>
-    </div>
+    </nav>
 
 
 </div>
@@ -40,3 +40,101 @@
 </div>
 </body>
 </html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Questrial&family=Signika+Negative&display=swap');
+
+    * {
+        box-sizing: border-box;
+
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    body {
+        background-image: url("https://media.istockphoto.com/vectors/funny-pizza-sign-in-retro-style-vector-id1128704035?b=1&k=20&m=1128704035&s=612x612&w=0&h=wg1JD4r7kLKCvJ5fX_IHG1krVuyQTxjb67ykG83yEts=");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family:  'Abril Fatface', cursive;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        width: 1000px;
+    }
+
+    .content a {
+        color: red;
+        display: flex;
+        display: inline-block;
+    }
+
+    .content {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        margin-top: 5rem;
+    }
+
+    .content h1 {
+        display: inline-block;
+        font-weight: 200;
+        padding: 1rem;
+    }
+
+
+    .pre-nav {
+        display: flex;
+        font-size: 2rem;
+        justify-content: space-between;
+    }
+
+    .logo {
+        color: black;
+    }
+
+    nav {
+        padding: 0.5rem 0;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav li a{
+        background-color: orange;
+        color: white;
+        display: block;
+        text-align: center;
+    }
+
+    nav li {
+        flex: 1;
+    }
+
+
+    nav a.active {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+
+    nav a.highlight {
+        background-color: red;
+    }
+
+    nav a:hover {
+        opacity: 0.8;
+    }
+
+</style>
